@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="ocean">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#092c46">
+  <meta name="description" content="Portfolio Falen Eka Saputri, siswi XI RPL 1 SMK Negeri 8 Jember yang sedang belajar membuat website.">
+  <title>Falen Eka Saputri — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+  <div class="environment" aria-hidden="true">
+    <span class="environment__glow"></span>
+    <span class="environment__horizon"></span>
+    <span class="environment__mountains"></span>
+    <span class="environment__cloud environment__cloud--one"></span>
+    <span class="environment__cloud environment__cloud--two"></span>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="Falen, ke halaman utama">
+        <span class="brand__mark">f.</span>
+        <span>falen<span class="brand__dot">.</span></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Proyek</a>
+        <a href="#certificates">Sertifikat</a>
+        <a href="#journey">Journey</a>
+        <a class="nav-cta" href="#contact">Kontak <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="home">
+      <div class="hero__content">
+        <div class="eyebrow"><span class="status-dot"></span> Halo, selamat datang di ruang kecilku</div>
+        <h1>Hai, aku <span class="highlight">Falen</span><br>senang kamu <span class="handwritten">mampir!</span></h1>
+        <p class="hero__name">Falen Eka Saputri</p>
+        <p class="hero__school">XI RPL 1 <span>•</span> SMK Negeri 8 Jember</p>
+        <p class="hero__subtitle">RPL Student <span>•</span> Web Developer <span>•</span> Creative Learner</p>
+        <p class="hero__description">Belajar merangkai ide menjadi website yang bermanfaat, satu baris kode dan satu rasa penasaran setiap hari.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#projects">Lihat karyaku <span aria-hidden="true">↗</span></a>
+          <a class="button button--quiet" href="#about">Kenalan dulu <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero__note"><span aria-hidden="true">✦</span> Masih belajar, selalu bertumbuh.</div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="portrait-orbit portrait-orbit--outer"></div>
+        <div class="portrait-orbit portrait-orbit--inner"></div>
+        <span class="float-card float-card--top"><span aria-hidden="true">✿</span> little by little</span>
+        <span class="float-card float-card--bottom"><span aria-hidden="true">♡</span> made with curiosity</span>
+        <div class="portrait-frame">
+          <img src="falen.jpeg" alt="Foto profil Falen Eka Saputri">
+        </div>
+        <span class="sparkle sparkle--one" aria-hidden="true">✧</span>
+        <span class="sparkle sparkle--two" aria-hidden="true">✦</span>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Gulir ke bagian tentang"><span></span> scroll to explore</a>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <span class="section-kicker">sedikit tentangku</span>
+        <h2>Belajar hal baru,<br><span>menciptakan hal seru.</span></h2>
+      </div>
+      <div class="about-grid">
+        <article class="glass-card about-card">
+          <div class="about-card__icon" aria-hidden="true">☁</div>
+          <p>Hai! Aku <strong>Falen Eka Saputri</strong>, siswi kelas XI RPL 1 di SMK Negeri 8 Jember. Aku tertarik pada dunia pemrograman, desain, dan cara teknologi bisa membantu banyak orang.</p>
+          <p>Saat ini aku sedang belajar membuat website dari nol—mulai dari menyusun tampilan sampai memahami bagaimana sebuah fitur bekerja. Bagiku, setiap project adalah kesempatan untuk tumbuh lebih kreatif dan percaya diri.</p>
+          <div class="about-tags"><span>curious mind</span><span>creative heart</span><span>always learning</span></div>
+        </article>
+        <aside class="about-aside">
+          <div class="glass-card mini-card">
+            <span class="mini-card__emoji" aria-hidden="true">📍</span>
+            <div><span class="mini-card__label">Based in</span><strong>Jember, Indonesia</strong></div>
+          </div>
+          <div class="glass-card mini-card">
+            <span class="mini-card__emoji" aria-hidden="true">💻</span>
+            <div><span class="mini-card__label">Currently learning</span><strong>Web development</strong></div>
+          </div>
+          <div class="quote-card">
+            <span aria-hidden="true">“</span>
+            <p>Great things are done by a series of small things brought together.</p>
+            <small>— Vincent van Gogh</small>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading section-heading--center">
+        <span class="section-kicker">toolbox-ku</span>
+        <h2>Hal-hal yang sedang <span>kupelajari.</span></h2>
+        <p>Pelan-pelan diasah, satu skill baru setiap saat.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="glass-card skill-card">
+          <span class="skill-card__icon skill-card__icon--pink" aria-hidden="true">&lt;/&gt;</span>
+          <h3>HTML &amp; CSS</h3>
+          <p>Menyusun halaman web dan membuat tampilannya lebih nyaman dilihat.</p>
+          <div class="skill-meter"><span style="--level: 76%"></span></div><small>Terus berlatih</small>
+        </article>
+        <article class="glass-card skill-card">
+          <span class="skill-card__icon skill-card__icon--blue" aria-hidden="true">JS</span>
+          <h3>JavaScript</h3>
+          <p>Belajar menambahkan interaksi agar halaman terasa lebih hidup.</p>
+          <div class="skill-meter"><span style="--level: 48%"></span></div><small>Dasar &amp; eksplorasi</small>
+        </article>
+        <article class="glass-card skill-card">
+          <span class="skill-card__icon skill-card__icon--green" aria-hidden="true">✳</span>
+          <h3>UI &amp; Kreativitas</h3>
+          <p>Mencari inspirasi, memilih warna, dan merancang pengalaman pengguna.</p>
+          <div class="skill-meter"><span style="--level: 63%"></span></div><small>Belajar lewat eksperimen</small>
+        </article>
+        <article class="glass-card skill-card">
+          <span class="skill-card__icon skill-card__icon--peach" aria-hidden="true">♡</span>
+          <h3>Kolaborasi</h3>
+          <p>Berbagi ide, mendengarkan masukan, dan tumbuh bersama tim.</p>
+          <div class="skill-meter"><span style="--level: 70%"></span></div><small>Selalu terbuka belajar</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container learning-section" id="learning">
+      <div class="section-heading section-heading--row">
+        <div><span class="section-kicker">my learning path</span><h2>Currently <span>Learning 🚀</span></h2></div>
+        <p>Setiap hal baru yang kupelajari adalah satu langkah menuju project berikutnya.</p>
+      </div>
+      <div class="learning-card glass-card">
+        <div class="learning-card__intro"><span class="learning-card__icon" aria-hidden="true">⌘</span><div><h3>Skill journey-ku</h3><p>Always learning, always building.</p></div></div>
+        <div class="learning-list" aria-label="Teknologi yang sedang dipelajari">
+          <span class="learning-badge"><b>01</b> HTML</span><span class="learning-badge"><b>02</b> CSS</span>
+          <span class="learning-badge"><b>03</b> JavaScript</span><span class="learning-badge"><b>04</b> PHP</span>
+          <span class="learning-badge"><b>05</b> MySQL</span><span class="learning-badge"><b>06</b> Laravel</span>
+          <span class="learning-badge"><b>07</b> Git &amp; GitHub</span>
+        </div>
+        <div class="learning-card__footer"><span>Curiosity in progress</span><span class="learning-dots" aria-hidden="true">● ● ●</span></div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading section-heading--row">
+        <div><span class="section-kicker">selected works</span><h2>Project <span>kecilku.</span></h2></div>
+        <p>Tempat ide-ide belajar berubah jadi sesuatu yang bisa dicoba.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="glass-card project-card">
+          <div class="project-art"><img class="project-art__image" src="karya 1.jpeg" alt="Tampilan aplikasi Data Siswa dengan tabel dan pencarian data"></div>
+          <div class="project-card__body"><div class="project-card__meta"><span>01 / student data</span><span class="project-arrow" aria-hidden="true">↗</span></div><h3>Data Siswa</h3><p>Tampilan aplikasi pendataan siswa dengan fitur pencarian dan tabel data.</p><div class="project-tags"><span>Data</span><span>UI</span></div><div class="project-actions"><button type="button" disabled title="Tambahkan URL GitHub project ini">GitHub <span>↗</span></button><button type="button" disabled title="Tambahkan URL demo project ini">Live Demo <span>↗</span></button></div></div>
+        </article>
+        <article class="glass-card project-card">
+          <div class="project-art"><img class="project-art__image" src="karya 2.jpeg" alt="Tampilan landing page dengan informasi layanan digital untuk bisnis"></div>
+          <div class="project-card__body"><div class="project-card__meta"><span>02 / landing page</span><span class="project-arrow" aria-hidden="true">↗</span></div><h3>Landing Page Bisnis</h3><p>Halaman promosi layanan digital dengan informasi layanan dan tombol ajakan.</p><div class="project-tags"><span>Web</span><span>UI</span></div><div class="project-actions"><button type="button" disabled title="Tambahkan URL GitHub project ini">GitHub <span>↗</span></button><button type="button" disabled title="Tambahkan URL demo project ini">Live Demo <span>↗</span></button></div></div>
+        </article>
+        <article class="glass-card project-card">
+          <div class="project-art"><img class="project-art__image" src="karya 3.jpeg" alt="Tampilan halaman portfolio pribadi Falen"></div>
+          <div class="project-card__body"><div class="project-card__meta"><span>03 / personal portfolio</span><span class="project-arrow" aria-hidden="true">↗</span></div><h3>Portfolio Pribadi</h3><p>Halaman portfolio untuk memperkenalkan diri dan menampilkan karya.</p><div class="project-tags"><span>Portfolio</span><span>Web</span></div><div class="project-actions"><button type="button" disabled title="Tambahkan URL GitHub project ini">GitHub <span>↗</span></button><button type="button" disabled title="Tambahkan URL demo project ini">Live Demo <span>↗</span></button></div></div>
+        </article>
+      </div>
+      <p class="projects-note"><span aria-hidden="true">✦</span> Tiga karya yang sedang kukembangkan dan kumpulkan dalam perjalanan belajarku.</p>
+    </section>
+
+    <section class="section container" id="certificates">
+      <div class="section-heading section-heading--row">
+        <div><span class="section-kicker">little achievements</span><h2>Certificates <span>&amp; Achievements</span></h2></div>
+        <p>Koleksi pencapaian dan hal-hal baru yang sudah kupelajari.</p>
+      </div>
+      <div class="certificate-filters" role="group" aria-label="Filter sertifikat">
+        <button class="certificate-filter is-active" type="button" data-certificate-filter="all" aria-pressed="true">All</button>
+        <button class="certificate-filter" type="button" data-certificate-filter="web" aria-pressed="false">Web</button>
+        <button class="certificate-filter" type="button" data-certificate-filter="programming" aria-pressed="false">Programming</button>
+        <button class="certificate-filter" type="button" data-certificate-filter="database" aria-pressed="false">Database</button>
+        <button class="certificate-filter" type="button" data-certificate-filter="other" aria-pressed="false">Other</button>
+      </div>
+      <div class="certificates-grid" id="certificates-grid" aria-live="polite"></div>
+      <p class="projects-note"><span aria-hidden="true">✦</span> Setiap sertifikat adalah jejak kecil dari proses belajar dan pencapaianku.</p>
+    </section>
+
+    <section class="section container journey-section" id="journey">
+      <div class="section-heading section-heading--center"><span class="section-kicker">from curious to creating</span><h2>My <span>Journey 🚀</span></h2><p>Setiap langkah kecil membawaku ke hal yang lebih besar.</p></div>
+      <div class="journey-track">
+        <article class="journey-step"><span class="journey-step__year">2024</span><span class="journey-step__node">✦</span><div class="glass-card journey-step__card"><span>THE BEGINNING</span><h3>Started Learning RPL</h3><p>Mulai mengenal Rekayasa Perangkat Lunak dan dunia teknologi.</p></div></article>
+        <article class="journey-step"><span class="journey-step__year">2025</span><span class="journey-step__node">✧</span><div class="glass-card journey-step__card"><span>FIRST BUILDS</span><h3>Started Building Web Projects</h3><p>Belajar membuat halaman web dan mencoba ide-ide sederhana.</p></div></article>
+        <article class="journey-step"><span class="journey-step__year">2026</span><span class="journey-step__node">✦</span><div class="glass-card journey-step__card"><span>LEVELING UP</span><h3>Learning PHP, MySQL &amp; Laravel</h3><p>Menjelajahi teknologi baru untuk membangun project yang lebih lengkap.</p></div></article>
+        <article class="journey-step journey-step--current"><span class="journey-step__year">NOW</span><span class="journey-step__node">♡</span><div class="glass-card journey-step__card"><span>RIGHT NOW</span><h3>Building My Portfolio</h3><p>Mengumpulkan perjalanan belajar dan karya dalam satu ruang.</p></div></article>
+        <article class="journey-step journey-step--next"><span class="journey-step__year">NEXT</span><span class="journey-step__node">→</span><div class="glass-card journey-step__card"><span>TO BE CONTINUED</span><h3>More Projects Coming...</h3><p>Masih banyak hal seru yang ingin kupelajari dan buat.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section container" id="education">
+      <div class="section-heading section-heading--center">
+        <span class="section-kicker">my journey</span><h2>Perjalanan <span>belajarku.</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline__line"></div>
+        <article class="timeline-item">
+          <span class="timeline-item__dot"></span><span class="timeline-item__date">Saat ini</span>
+          <div class="glass-card timeline-card"><span class="timeline-card__icon" aria-hidden="true">🎓</span><div><span class="timeline-card__tag">Pendidikan</span><h3>SMK Negeri 8 Jember</h3><p>Kelas XI RPL 1 · Rekayasa Perangkat Lunak</p><small>Mempelajari pemrograman, pengembangan website, dan teknologi.</small></div></div>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-item__dot"></span><span class="timeline-item__date">Setiap hari</span>
+          <div class="glass-card timeline-card"><span class="timeline-card__icon" aria-hidden="true">🌱</span><div><span class="timeline-card__tag">Personal growth</span><h3>Belajar &amp; mencoba hal baru</h3><p>Dari penasaran jadi karya kecil yang bermakna.</p><small>Step by step, tetap semangat bertumbuh.</small></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <div class="contact-card glass-card">
+        <span class="contact-card__sparkle" aria-hidden="true">✦</span>
+        <span class="section-kicker">say hello</span>
+        <h2>Siap Memulai Pengalaman Baru!</h2>
+        <p>Terbuka untuk belajar, berkembang, dan berkolaborasi. Siap mengasah keterampilan di dunia kerja serta memberikan kontribusi terbaik selama PKL!</p>
+        <a class="button button--primary" href="mailto:falenekasaputri@gmail.com?subject=Halo%20Falen">Kirim email <span aria-hidden="true">↗</span></a>
+        <nav class="contact-links" aria-label="Media sosial dan WhatsApp">
+          <a class="contact-link" href="https://www.tiktok.com/@pallennn_18?_r=1&amp;_t=ZS-9AJbwnCXn3U" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">↗</span></a>
+          <a class="contact-link" href="https://www.instagram.com/urlove.f4ll3n._?stkn=MTh4enB0ZGlwcXNocQ==" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+          <a class="contact-link" href="https://wa.me/6282230034983" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+        </nav>
+        <div class="contact-card__doodle" aria-hidden="true">♡</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home"><span class="brand__mark">f.</span><span>falen<span class="brand__dot">.</span></span></a>
+      <p>Dibuat dengan <span aria-label="cinta">♡</span> dan rasa ingin tahu.</p>
+      <a class="back-top" href="#home">Kembali ke atas ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Falen Eka Saputri</span><span>Jember, Indonesia ✿</span></div>
+  </footer>
+
+  <aside class="theme-switcher" aria-label="Pilih tema website">
+    <span class="theme-switcher__label">ganti suasana</span>
+    <div class="theme-options" role="group" aria-label="Pilihan tema">
+      <button class="theme-button is-active" type="button" data-theme-choice="ocean" aria-pressed="true" title="Tema Laut"><span aria-hidden="true">🌊</span><span>Ocean</span></button>
+      <button class="theme-button" type="button" data-theme-choice="spring" aria-pressed="false" title="Tema Semi"><span aria-hidden="true">🌸</span><span>Spring</span></button>
+      <button class="theme-button" type="button" data-theme-choice="winter" aria-pressed="false" title="Tema Salju"><span aria-hidden="true">❄️</span><span>Winter</span></button>
+    </div>
+  </aside>
+
+  <aside class="music-player glass-card" aria-label="Pemutar musik">
+    <div class="music-player__now"><span class="music-player__icon" aria-hidden="true">♫</span><div><span class="music-player__eyebrow">Playing now</span><strong id="music-title">Ocean Dreams</strong><span class="music-player__status" id="music-status" aria-live="polite">Musik opsional · tekan play</span></div></div>
+    <audio id="theme-audio" preload="none" loop></audio>
+    <div class="music-player__progress-row"><span id="music-current">0:00</span><input id="music-progress" type="range" min="0" max="100" value="0" aria-label="Posisi musik"><span id="music-duration">0:00</span></div>
+    <div class="music-player__controls">
+      <button class="music-control" type="button" id="music-previous" aria-label="Musik tema sebelumnya">⏮</button>
+      <button class="music-control music-control--play" type="button" id="music-play" aria-label="Putar musik">▶</button>
+      <button class="music-control" type="button" id="music-next" aria-label="Musik tema berikutnya">⏭</button>
+      <button class="music-control music-control--mute" type="button" id="music-mute" aria-label="Bisukan musik">🔊</button>
+      <input id="music-volume" type="range" min="0" max="1" step="0.05" value="0.65" aria-label="Volume musik">
+    </div>
+  </aside>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Kembali ke atas">↑</button>
+  <dialog class="certificate-dialog" id="certificate-dialog" aria-labelledby="certificate-dialog-title">
+    <div class="certificate-dialog__card">
+      <button class="certificate-dialog__close" type="button" data-close-certificate aria-label="Tutup detail sertifikat">×</button>
+      <div class="certificate-dialog__image" id="certificate-dialog-image"></div>
+      <div class="certificate-dialog__content">
+        <span class="certificate-card__label" id="certificate-dialog-category"></span>
+        <h2 id="certificate-dialog-title"></h2>
+        <p class="certificate-dialog__issuer" id="certificate-dialog-issuer"></p>
+        <p id="certificate-dialog-description"></p>
+        <div class="certificate-dialog__footer"><span id="certificate-dialog-date"></span><a class="button button--primary" id="certificate-dialog-link" href="#" target="_blank" rel="noopener noreferrer" hidden>Open Credential ↗</a></div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
